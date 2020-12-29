@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang='es'>
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Error 404: Página no encontrada 😅</title>
+	<style>
+		*,
+		:before,
+		:after {
+			box-sizing: border-box;
+			transition: all .5s;
+		}
+		body {
+			font-family: sans-serif;
+			font-size: 16px;
+			line-height: 1.43;
+			text-align: center;
+			color: gray;
+			background: whitesmoke;
+			margin: 0;
+			padding: 1rem 2rem;
+		}
+		main {
+			background: white;
+			padding: 2rem;
+			max-width: 516px;
+			min-height: calc(100vh - 2rem);
+			border-radius: .5rem;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		main:before {
+			content: '404';
+			font-size: 7rem;
+			color: lightgray;
+		}
+		h2 {
+			color: darkgray;
+		}
+		a {
+			color: indianred;
+			text-decoration: none;
+		}
+		a:hover {
+			color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<h1>¡Página no encontrada! 😅</h1>
+		<h2>(Error 404)</h2>
+		<p>La página a la que intentas acceder no está disponible, ¡o almenos de momento!</p>
+		<p>Puede ser porque hayas escrito la URL incorrectamente o porque hayas accedido mediante un enlace antiguo que haya sido eliminado.</p>
+		<p>En cualquier caso, te sugerimos que vayas a la <a href='/'>página de inicio</a> 😄</p>
+	</main>
+</body>
+</html>

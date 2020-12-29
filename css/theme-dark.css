@@ -1,0 +1,47 @@
+/* TEMA OSCURO */
+body.theme-dark { --color-1: cadetblue; }
+body.theme-dark { --color-2: burlywood; }
+body.theme-dark { color: lightgray; }
+body.theme-dark table,
+body.theme-dark table * { border-color: darkgray;}
+body.theme-dark th { color: lightgray;}
+body.theme-dark tr:nth-child(2n+1) { background-color: #555;}
+body.theme-dark tr:nth-child(2n) { background-color: gray; }
+body.theme-dark button,
+body.theme-dark .btn { color: whitesmoke; }
+body.theme-dark .btn-white { background-color: #555; color: whitesmoke; }
+body.theme-dark .bg-white { background-color: #555; }
+body.theme-dark .bg-whitesmoke { background-color: gray; }
+body.theme-dark button:hover,
+body.theme-dark .btn:hover { color: whitesmoke; }
+body.theme-dark .btn-white > svg > *,
+body.theme-dark svg.svg-sm > * { fill: lightgray; stroke: lightgray; }
+body.theme-dark .text-white { color: whitesmoke; }
+body.theme-dark .onda-u [fill="white"],
+body.theme-dark .onda-d [fill="white"] { fill: #555; }
+body.theme-dark .onda-u [fill="whitesmoke"],
+body.theme-dark .onda-d [fill="whitesmoke"] { fill: gray; }
+body.theme-dark .onda-u [fill="var(--color-1)"] { fill: #333; }
+body.theme-dark path[stroke="white"] { stroke: #555; }
+body.theme-dark #caracteristicas h3,
+body.theme-dark #horarios h2 { color: lightgray; }
+body.theme-dark #equipo h4 { color: lightgray; }
+body.theme-dark #equipo h3 { text-shadow: 0 0.15em 0 #555, 0 -0.15em 0 #555, 0.15em 0 0 #555, -0.15em 0 0 #555, 0.1em 0.1em 0 #555, -0.1em 0.1em 0 #555, -0.1em -0.1em 0 #555, 0.1em -0.1em 0 #555; }
+body.theme-dark #equipo h2,
+body.theme-dark #resenas h2,
+body.theme-dark #contacto h2 { color: var(--color-2); }
+body.theme-dark #equipo h2:after,
+body.theme-dark #resenas h2:after,
+body.theme-dark #contacto h2:after { border-left-color: var(--color-1); }
+body.theme-dark #precios h2 { color: var(--color-1); }
+body.theme-dark #nosotros { background-image: url("media/remolones.png"), linear-gradient(#333, var(--color-1)) !important; }
+body.theme-dark #precios { background-image: linear-gradient(#333, var(--color-1)); }
+body.theme-dark #resenas { background-color: #333; }
+body.theme-dark #resenas cite:after { border-top-color: #555; }
+body.theme-dark #resenas cite > span { color: var(--color-1); }
+body.theme-dark #contacto textarea,
+body.theme-dark #contacto input[name="nombre"],
+body.theme-dark #contacto input[name="email"] { color: white; border-color: darkgray;}
+body.theme-dark #compartir { background: darkgray; }
+body.theme-dark #compartir svg { fill: whitesmoke; }
+body.theme-dark .top svg { fill: whitesmoke; }

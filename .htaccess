@@ -1,0 +1,33 @@
+# Activar redirecciones
+RewriteEngine On
+
+# Redireccionar de http a https
+RewriteCond %{ENV:HTTPS} !on [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://feelfull.seacomoseo.com/$1 [R=301,L,NE]
+
+# Redireccionar de www a sin
+RewriteCond %{HTTP_HOST} ^www.feelfull.seacomoseo.com [NC]
+RewriteRule ^(.*)$ https://feelfull.seacomoseo.com/$1 [L,R=301]
+
+# Cualquier URL muestra el contenido del index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+) /index.php [L]
+
+# Cambiar el índice del directorio a index.php
+DirectoryIndex index.php
+
+# Especificar caché de navegador en servidor
+<IfModule mod_expires.c>
+<filesmatch "\.(ico|pdf|flv|svg|jpg|jpeg|png|gif|mp4|JPG|JPEG|PNG|GIF|MP4|js|css|xml|txt|woff2|woff|ttf|eot)$">
+ExpiresActive on
+ExpiresDefault "access plus 30 day"
+</filesmatch>
+</IfModule>
+
+# Redirecciones 301
+Redirect 301 /m/ /
+Redirect 301 /mobile/ /
+## RedirectMatch 301 /index\.php.* /
+## RedirectMatch 301 /index\.(html|php) /
